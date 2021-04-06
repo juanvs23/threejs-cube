@@ -4,12 +4,20 @@
   "description": "inicios con threejs forma geometrica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
   },
   "author": "Juan Carlos Avila",
   "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.16"
+    "laravel-mix": "^6.0.16",
+    "postcss": "^8.1.14"
+  },
+  "dependencies": {
+    "three": "^0.127.0"
   }
 }
